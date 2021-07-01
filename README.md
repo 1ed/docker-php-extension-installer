@@ -270,6 +270,7 @@ The compilation of some extensions may be fine-tuned to better fit your needs by
 | Extension | Environment variable | Description |
 |---|---|---|
 | lzf | IPE_LZF_BETTERCOMPRESSION=1 | By default `install-php-extensions` compiles the `lzf` extension to prefer speed over size; you can use this environment variable to compile it preferring size over speed  |
+| gd | IPE_GD_WITHOUTAVIF=1 | Since PHP 8.1, gd supports the AVIF format. Enabling it requires compiling libaom and/or libavif, which requires some time. You can disable AVIF support by setting this environment variable |
 
 ## Special requirements
 
